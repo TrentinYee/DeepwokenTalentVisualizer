@@ -1,6 +1,108 @@
+.btn-strength {
+  --btn-color: #aa3333;
+  --btn-hover: #b35252;
+}
+
+.btn-fortitude {
+  --btn-color: #bb8846;
+  --btn-hover: #e7b36f;
+}
+
+.btn-agility {
+  --btn-color: #7ab47a;
+  --btn-hover: #7ddb7d;
+}
+
+.btn-intelligence {
+  --btn-color: #445891;
+  --btn-hover: #4266c7;
+}
+
+.btn-willpower {
+  --btn-color: #6299aa;
+  --btn-hover:  #94c7d6;
+}
+
+.btn-charisma {
+  --btn-color: #a570af;
+  --btn-hover: #ce62e4;
+}
+
+.btn-heavy {
+  --btn-color: #3a3a4e;
+  --btn-hover: #737379;
+
+}
+
+.btn-medium {
+  --btn-color: #68401f;
+  --btn-hover: #6e3c13;
+
+}
+
+.btn-light {
+  --btn-color: #48806a;
+  --btn-hover: #4daa85;
+
+}
+
+.btn-flame {
+  --btn-color: #db7c23;
+  --btn-hover: #ffaa5b;
+
+}
+
+.btn-thunder {
+  --btn-color: #e9ca1b;
+  --btn-hover: #ffe553;
+
+}
+
+.btn-gale {
+  --btn-color: #59974a;
+  --btn-hover: #a0db91;
+
+}
+
+.btn-frost {
+  --btn-color: #11dada;
+  --btn-hover: #4df5f5;
+
+}
+
+.btn-iron {
+  --btn-color: #515757;
+  --btn-hover: #9b9b9b;
+
+}
+
+.btn-blood {
+  --btn-color: #5c0808;
+  --btn-hover: #832525;
+
+}
+
 .btn-circle {
   border-radius: 50%;
   aspect-ratio: 1/1;
-  padding: 0.75em;
+  width: clamp(50px, 8vw, 100px);
+  height: clmap(50px, 8vw, 100px);
+
+  border: .2 em;
+  border-style: solid;
+  border-color: goldenrod;
+
+  display: flex;
+  font-size: clamp(0.3rem, 1.2vw, 1rem);
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  
+  color: white;
+  background-color: var(--btn-color, magenta)
+}
+
+.btn-circle:hover {
+  background-color: var(--btn-hover, magenta);
 }

@@ -6,7 +6,17 @@ interface Props {
   onClick: () => void;
 }
 
-const Button = ({ children, color = "primary", onClick }: Props) => {
+/* 
+The color is intended to be used with the named css colors for each element
+determined by the first word in each name:
+
+frostcall would be "frost"
+charisma would be "charisma"
+heavy weapon would be "heavy"
+
+*/
+const Button = ({ children, color = "secondary", onClick }: Props) => {
+  // the color is secondary by default
   return (
     <button className={"btn btn-" + color + " btn-circle"} onClick={onClick}>
       {children}

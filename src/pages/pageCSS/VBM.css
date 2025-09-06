@@ -1,0 +1,20 @@
+.container {
+  display: grid;
+  
+  margin-left: 0px;
+  margin-top: 1vw;
+  width: 66vw;
+  place-items: center;
+
+  grid-template-areas: 
+  "b_header b_header b_header"
+  "b_body b_body b_body"
+  "m_header m_header m_header"
+  "m_body m_body m_body"
+  ;
+  grid-template-columns: auto auto auto;
+  row-gap: 1em;
+  column-gap: 0.1em;
+
+  background-color: magenta;
+}
