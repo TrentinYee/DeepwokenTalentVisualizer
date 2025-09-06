@@ -1,20 +1,29 @@
-.container {
+/*In hindsight I could have just used a react container but I probablly needed to learn css flexboxes/grids eventually anyways*/
+:root {
+    --row_width: 66vw
+}
+
+.button-grid {
   display: grid;
   
   margin-left: 0px;
-  margin-top: 1vw;
-  width: 66vw;
+  padding: 1vw;
+  width: var(--row_width);
   place-items: center;
 
-  grid-template-areas: 
-  "b_header b_header b_header"
-  "b_body b_body b_body"
-  "m_header m_header m_header"
-  "m_body m_body m_body"
-  ;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
   row-gap: 1em;
   column-gap: 0.1em;
 
   background-color: magenta;
 }
+
+.grid-header {
+  grid-column: 1 / -1;
+  text-align: center;
+  width: var(--row_width);
+  margin-left: 0px;
+
+  background-color: darkorchid;
+}
+
