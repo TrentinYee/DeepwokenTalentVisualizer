@@ -1,0 +1,11 @@
+@media (min-width: 992px) { /* lg breakpoint */
+  .navbar-nav .nav-link {
+    font-size: 1.2rem !important; /* desktop */
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav .nav-link {
+    font-size: 0.75rem !important; /* mobile */
+  }
+}

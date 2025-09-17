@@ -1,11 +1,13 @@
 /*In hindsight I could have just used a react container but I probablly needed to learn css flexboxes/grids eventually anyways*/
 :root {
-    --row_width: 66vw
+  --row_width: 66vw
 }
+
+
 
 .button-grid {
   display: grid;
-  
+
   margin-left: 0px;
   padding: 1vw;
   width: var(--row_width);
@@ -26,4 +28,3 @@
 
   background-color: darkorchid;
 }
-
