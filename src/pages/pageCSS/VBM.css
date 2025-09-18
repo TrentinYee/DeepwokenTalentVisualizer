@@ -1,14 +1,40 @@
 /*In hindsight I could have just used a react container but I probablly needed to learn css flexboxes/grids eventually anyways*/
 :root {
-  --row_width: 66vw
+  --row_width: 45vw
 }
 
+body {
+  background-color: #121D16
+}
 
+@media only screen and (max-width: 992px) {
+  .vr {
+    display: none;
+  }
+}
+
+.vr {
+  color: antiquewhite;
+  height: 40vw;
+  width: 2px;
+  opacity: 1;
+}
+
+/* outer layer organizing the rows next to each other*/
+.grid-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
+  padding-top: 3vw;
+
+  background-color: rgba(2, 2, 10, 0.4);
+}
 
 .button-grid {
   display: grid;
 
-  margin-left: 0px;
+  margin-left: 10px;
   padding: 1vw;
   width: var(--row_width);
   place-items: center;
@@ -17,14 +43,21 @@
   row-gap: 1em;
   column-gap: 0.1em;
 
-  background-color: magenta;
+  border: .05em;
+  border-style: solid none none none;
+  border-color: antiquewhite;
+  
+}
+
+/* so that blood aligns center */
+.button-grid .last {
+  grid-column: 2;
 }
 
 .grid-header {
   grid-column: 1 / -1;
   text-align: center;
   width: var(--row_width);
-  margin-left: 0px;
-
-  background-color: darkorchid;
+  margin-left: 10px;
+  
 }

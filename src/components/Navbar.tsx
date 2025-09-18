@@ -8,7 +8,7 @@ interface Props {
 
 const Navbar = ({ items, links, heading }: Props) => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-secondary">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         {/* Header */}
         <span className="navbar-brand fs-1">{heading}</span>

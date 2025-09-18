@@ -65,8 +65,14 @@
 }
 
 .btn-frost {
-  --btn-color: #11dada;
+  --btn-color: #3ab1b1;
   --btn-hover: #4df5f5;
+
+}
+
+.btn-shadow {
+  --btn-color: #142222;
+  --btn-hover: #1d0f18;
 
 }
 
@@ -85,10 +91,10 @@
 .btn-circle {
   border-radius: 50%;
   aspect-ratio: 1/1;
-  width: clamp(50px, 8vw, 100px);
-  height: clmap(50px, 8vw, 100px);
+  width: clamp(50px, 8vw, 150px);
+  height: clamp(50px, 8vw, 150px);
 
-  border: .2 em;
+  border: clamp(.2em, .4em, .6em);
   border-style: solid;
   border-color: goldenrod;
 
