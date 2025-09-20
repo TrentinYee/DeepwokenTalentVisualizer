@@ -1,0 +1,6 @@
+.full-width-navbar {
+  left: 0;
+  right: 0;
+  width: 125vw;
+  overflow-x: auto;
+}

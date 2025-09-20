@@ -1,0 +1,105 @@
+.bar-strength {
+  --bar-color: #aa3333;
+}
+
+.bar-fortitude {
+  --bar-color: #bb8846;
+}
+
+.bar-agility {
+  --bar-color: #7ab47a;
+ 
+}
+
+.bar-intelligence {
+  --bar-color: #445891;
+  
+}
+
+.bar-willpower {
+  --bar-color: #6299aa;
+
+}
+
+.bar-charisma {
+  --bar-color: #a570af;
+}
+
+.bar-heavy {
+  --bar-color: #3a3a4e;
+
+}
+
+.bar-medium {
+  --bar-color: #68401f;
+   
+
+}
+
+.bar-light {
+  --bar-color: #48806a;
+   
+
+}
+
+.bar-flame {
+  --bar-color: #db7c23;
+   
+}
+
+.bar-thunder {
+  --bar-color: #e9ca1b;
+   
+
+}
+
+.bar-gale {
+  --bar-color: #59974a;
+ 
+
+}
+
+.bar-frost {
+  --bar-color: #3ab1b1;
+  
+
+}
+
+.bar-shadow {
+  --bar-color: #142222;
+ 
+
+}
+
+.bar-iron {
+  --bar-color: #515757;
+  
+
+}
+
+.bar-blood {
+  --bar-color: #5c0808;
+ 
+
+}
+
+/* for the interior colored bar */
+.progress-bar {
+    background-color: var(--bar-color, magenta);
+}
+
+
+.progress-side {
+  margin-right: 3vw;
+  margin-left: 3vw;
+  width: 100vw;
+  height: clamp(10px, 30px, 40px); 
+  
+}
+
+.progress-vert {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    width: 100vw;
+    transform: rotate(-90deg);
+}

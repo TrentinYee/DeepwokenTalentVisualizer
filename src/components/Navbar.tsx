@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 interface Props {
   items: string[];
@@ -8,7 +9,7 @@ interface Props {
 
 const Navbar = ({ items, links, heading }: Props) => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark full-width-navbar">
       <div className="container-fluid">
         {/* Header */}
         <span className="navbar-brand fs-1">{heading}</span>

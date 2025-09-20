@@ -1,5 +1,5 @@
 const TalentTrees = () => {
-  return <div>Sample TalentTrees Page for now</div>;
+  return <div className="text-white">Sample TalentTrees Page for now</div>;
 };
 
 export default TalentTrees;

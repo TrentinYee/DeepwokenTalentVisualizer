@@ -1,4 +1,5 @@
 import Button from "../components/Button";
+import { Link } from "react-router-dom";
 import "./pageCSS/VBM.css";
 
 const VBM = () => {
@@ -12,9 +13,14 @@ const VBM = () => {
           <div className="button-grid">
             {" "}
             {/* Body stat grid */}
-            <Button color="strength" onClick={() => console.log("Clicked")}>
-              Strength
-            </Button>
+            <Link to="/VisualBuildMaker/Strength">
+              <Button
+                color="strength"
+                onClick={() => console.log("Strength Clicked")}
+              >
+                Strength
+              </Button>
+            </Link>
             <Button color="fortitude" onClick={() => console.log("Clicked")}>
               Fortitude
             </Button>
